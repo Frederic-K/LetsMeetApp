@@ -72,8 +72,6 @@ export default function HeaderAppBar() {
 
   const colorMode = useContext(ColorModeContext)
 
-  /// TRY TO WRAP WITH USEEFFECT TO AVOID CONSOLE WARNING
-  /// https://stackoverflow.com/questions/62336340/cannot-update-a-component-while-rendering-a-different-component-warning/71257867#71257867
   const { modeTheme } = useSelector(modeThemeSelector)
 
   return (
