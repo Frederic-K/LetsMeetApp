@@ -1,0 +1,114 @@
+[
+  {
+    "indexXP": "1",
+    "jobTitle": "Développeur junior Front-end JavaScript React",
+    "dates": "2022-2023",
+    "yearsNb": "1 an",
+    "location": "Openclassrooms",
+    "description": [
+      "Développer le Front-end d’application (Saas / Web) et d’interfaces utilisateurs (SPA / Web)"
+    ],
+    "skills": [
+      "React",
+      "Javascript",
+      "HTML",
+      "CSS",
+      "Sass",
+      "Redux",
+      "Npm",
+      "MUI",
+      "Git",
+      "GitHub",
+      "Figma",
+      "GitKraken"
+    ]
+  },
+  {
+    "indexXP": "2",
+    "jobTitle": "Technicien support utilisateurs - Service Informatique",
+    "dates": "2013-2021",
+    "yearsNb": "8 ans",
+    "location": "Urssaf Alsace",
+    "description": [
+      "Identifier avec son interlocuteur les besoins et co-construire une solution ou une réponse appropriée.",
+      "Assurer un rôle de support et d'assistance polyvalente auprès des utilisateurs sur leurs postes de travail.",
+      "Se positionner dans une relation de service auprès des utilisateurs."
+    ],
+    "skills": [
+      "Diagnostic informatique",
+      "Pédagogie",
+      "Mise en oeuvre de solutions",
+      "Communication",
+      "Assistance matériel informatique",
+      "Déploiement logiciel",
+      "Administration système",
+      "Sens de l'écoute",
+      "Analyse des besoins",
+      "Accompagnement et tutorat"
+    ]
+  },
+  {
+    "indexXP": "3",
+    "jobTitle": "Référent Expert - Flux Entrant Non Dématérialisé et Image",
+    "dates": "2008-2013",
+    "yearsNb": "5 ans",
+    "location": "Urssaf Alsace",
+    "description": [
+      "Pilote Adjoint du projet de déploiement et de l'administration d'une nouvelle chaîne de production pour la dématérialisation des documents.",
+      "Participer au groupe de travail nationaux sur l’Archivage Électronique des Documents.",
+      "Contribuer en collaboration avec le Responsable Régional à l'atteinte des objectifs fixés par la Direction.",
+      "Assurer la Gestion Électronique des Documents et collaborer à l’administration fonctionnelle et technique des outils de production"
+    ],
+    "skills": [
+      "Pédagogie",
+      "Mise en oeuvre de solution",
+      "Communication",
+      "Prise de décision",
+      "Technique d'animation",
+      "Formation",
+      "Gestion du changement",
+      "Contrôle qualité",
+      "Sens de l'écoute",
+      "Analyse de processus",
+      "Analyse des besoins",
+      "Accompagnement et tutorat",
+      "Archivage électronique"
+    ]
+  },
+  {
+    "indexXP": "4",
+    "jobTitle": "Conseiller - Service Offres de Services",
+    "dates": "2005-2008",
+    "yearsNb": "3 ans",
+    "location": "Urssaf Alsace",
+    "description": [
+      "Assurer la promotion et le suivi des services dématérialisés proposés par le réseau du recouvrement.",
+      "Information et accompagnement des clients et des partenaires."
+    ],
+    "skills": [
+      "Suivie client",
+      "Vente de solution",
+      "Sens de l'écoute",
+      "Analyse des besoins",
+      "Accompagnement et tutorat"
+    ]
+  },
+  {
+    "indexXP": "5",
+    "jobTitle": "Gestionnaire de comptes - Recouvrement Amiable et Forcé",
+    "dates": "2001-2005",
+    "yearsNb": "4 ans",
+    "location": "Urssaf Alsace",
+    "description": [
+      "Gestion d'un portefeuille de comptes clients sur le plan contentieux et gestion des relations avec les partenaires.",
+      "Information et accompagnement des clients au regard de leurs obligations et de leurs droits."
+    ],
+    "skills": [
+      "Pédagogie",
+      "Mise en oeuvre de solutions",
+      "Assistance juridique",
+      "Sens de l'organisation",
+      "Sens de l'écoute"
+    ]
+  }
+]

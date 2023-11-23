@@ -1,0 +1,6 @@
+.circularCarousel {
+  opacity: 0;
+  animation:
+    fadeIn 5s ease-in-out 5s forwards,
+    spinCircularCarousel 100s linear 0s infinite;
+}

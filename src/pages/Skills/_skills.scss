@@ -1,0 +1,17 @@
+@for $skill-nb from 1 to 13 {
+  .skill__button--#{$skill-nb} {
+    opacity: 0;
+    animation: translateNdFadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: ($skill-nb * 100)+0ms;
+  }
+}
+
+// .skills__title {
+//   @include text-radial-gradient-Text;
+// }
+
+.skill__btn--BbLight {
+  background-color: grey;
+}

@@ -1,0 +1,84 @@
+.animated-border--1 {
+  position: relative;
+  // font-family: 'Lato';
+  // color: #ffffff;
+  padding: 30px;
+  // text-align: center;
+  border-radius: 6px;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 6px;
+    // background: linear-gradient(120deg, #00f260, #0575e6, #00f260);
+    background: linear-gradient(120deg, #ffffff, #000000, #ffffff);
+    background-size: 300% 300%;
+    animation:
+      frame-enter 2s forwards ease-in-out reverse,
+      gradient-animation 4s ease-in-out infinite;
+  }
+}
+/////////////////////////////////////////////////////
+///
+///
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+.animated-border--2 {
+  --d: 6s;
+  --angle: 90deg;
+  --c1: rgb(251, 251, 251);
+  --c2: rgba(0, 4, 5, 0.591);
+  font-size: 3vw;
+  margin: max(1rem, 3vw);
+  border: 0.35rem solid;
+  padding: 1.5vw;
+  border-image: conic-gradient(
+      from var(--angle),
+      var(--c2),
+      var(--c1) 0.1turn,
+      var(--c1) 0.15turn,
+      var(--c2) 0.25turn
+    )
+    30;
+  animation: borderRotate var(--d) linear infinite forwards;
+}
+
+////////////////////////////////////////////////////
+///
+///
+
+.animated-border--3 {
+  position: relative;
+  margin: auto;
+  width: 560px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 24px;
+  padding: 10px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid gold;
+    transition: all 0.5s;
+    animation: clippath 3s forwards linear;
+  }
+}
+
+//////////////////////////////////////////////////////
+/// Couleur du text - don't touch !
+//////////////////////////////////////////////////////
+.text-linear-gradient {
+  @include text-linear-gradient-Text;
+}

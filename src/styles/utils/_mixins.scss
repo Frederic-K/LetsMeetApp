@@ -1,0 +1,57 @@
+@mixin text-radial-gradient-LinkHover {
+  background: #cf1512;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #cf1512 0%,
+    #ff8c1a 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin text-radial-gradient-LinkActive {
+  background: #ff8c1a;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #ff8c1a 0%,
+    #cf1512 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin text-linear-gradient-Text {
+  background: #cf1512;
+  background: linear-gradient(to right, #cf1512 0%, #ff8c19 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin text-radial-gradient-Text {
+  background: #ff8c1a;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #ff8c1a 0%,
+    #cf1512 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin text-radial-gradient-Title {
+  background: #00cc1b;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #00cc1b 0%,
+    #059100 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin border-radial-gradient {
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #cf1512, #ff8c19) 1;
+  padding: 0px;
+}

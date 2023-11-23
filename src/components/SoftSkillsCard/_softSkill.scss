@@ -1,0 +1,9 @@
+@for $softSkill-nb from 0 to 7 {
+  .profile__softSkill--#{$softSkill-nb} {
+    opacity: 0;
+    animation: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: ($softSkill-nb * 100)+0ms;
+  }
+}

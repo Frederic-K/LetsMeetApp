@@ -1,0 +1,55 @@
+// *,
+// *::before,
+// *::after {
+//   // max-width: 1440px;
+//   // margin: auto;
+//   box-sizing: border-box;
+//   text-decoration: none;
+// }
+
+// #root {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//   width: 100vw;
+//   height: 100%;
+// }
+
+// #root {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//   width: 100%;
+//   height: 100vh;
+// }
+
+// #root {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//   width: 100%;
+//   height: 100%;
+// }
+
+.text-radial-gradient-Text {
+  @include text-radial-gradient-Text;
+}
+
+.text-linear-gradient-Text {
+  @include text-linear-gradient-Text;
+}
+
+.text-radial-gradient-Title {
+  @include text-radial-gradient-Title;
+}
+
+.border-radial-gradient {
+  @include border-radial-gradient;
+}
+
+.bold {
+  font-weight: bold;
+}

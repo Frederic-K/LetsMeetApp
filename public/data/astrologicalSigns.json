@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Bélier",
+    "skill": "le courage",
+    "description": "Si le Bélier a un côté impulsif, cela lui permet d’être très courageux et de foncer quand d’autres signes auraient peur d’y aller."
+  },
+  {
+    "name": "Taureau",
+    "skill": "la loyauté",
+    "description": "La loyauté est la qualité principale de ce signe de terre. C’est un signe fiable et responsable, ce qui en fait un bon confident."
+  },
+  {
+    "name": "Gémeaux",
+    "skill": "la sociabilité",
+    "description": "Le Gémeaux est le signe le plus sociable du zodiaque car il s’adapte à tout le monde et aime rassembler les gens."
+  },
+  {
+    "name": "Cancer",
+    "skill": "la tendresse",
+    "description": "Le Cancer est très sensible et très affectueux. C’est un signe tendre qui sait réconforter son entourage quand ça ne va pas."
+  },
+  {
+    "name": "Lion",
+    "skill": "le charisme",
+    "description": "Le Lion est solaire. Il rayonne et aime briller en société. Quand on rentre dans une pièce, on le remarque par son charisme."
+  },
+  {
+    "name": "Vierge",
+    "skill": "l’organisation",
+    "description": "Si la Vierge a bien une qualité, c’est celle d’être très organisée. Elle peut se sortir d’une situation compliquée grâce à ce sens aigu de l’organisation."
+  },
+  {
+    "name": "Balance",
+    "skill": "la diplomatie",
+    "description": "La Balance est la reine du compromis. Elle trouvera toujours une solution qui ira à tout le monde."
+  },
+  {
+    "name": "Scorpion",
+    "skill": "la séduction",
+    "description": "Le Scorpion est mystérieux et cela attire les gens vers lui. C'est un véritable aimant ! Il a un effet magnétique."
+  },
+  {
+    "name": "Sagittaire",
+    "skil": "l’optimisme",
+    "description": "Le Sagittaire est l’un des signes les plus optimistes du zodiaque. Il voit toujours le bon côté des choses !"
+  },
+  {
+    "name": "Verseau",
+    "skill": "l’humanité",
+    "description": "Il est très humaniste et créatif. Il est tourné vers l’humain et aime partager des expériences avec les autres."
+  },
+  {
+    "name": "Poissons",
+    "skill": "l'altruisme",
+    "description": "Le Poissons est très empathique. Il ne laissera jamais une personne exclue et ira toujours vers les autres."
+  },
+  {
+    "name": "Capricorne",
+    "skill": "l’ambition",
+    "description": "Le Capricorne est très ambitieux et c’est une belle qualité pour avancer dans sa vie."
+  }
+]

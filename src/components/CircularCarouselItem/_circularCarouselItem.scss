@@ -1,0 +1,91 @@
+$squareSizeXL: 365px;
+$squareIconSizeXL: 60px;
+$squareSizeXS: 230px;
+$squareIconSizeXS: 40px;
+
+////////////////////////////
+/// Original
+/// ////////////////////////
+// @for $square-nb from 0 to 5 {
+//   .carousel__square#{$square-nb} {
+//     transform: rotate(0deg + 22.5 * $square-nb);
+//   }
+// }
+
+@for $square-nb from 0 to 5 {
+  .carousel__squareXL#{$square-nb} {
+    transform: rotate(0deg + 22.5 * $square-nb);
+  }
+}
+////////////////////////////
+/// DoublerXS uniquement pour identifier éléments dans DevTools
+/// ////////////////////////
+@for $square-nb from 0 to 5 {
+  .carousel__squareXS#{$square-nb} {
+    transform: rotate(0deg + 22.5 * $square-nb);
+  }
+}
+
+.square__listXL {
+  width: $squareSizeXL;
+  height: $squareSizeXL;
+  margin: 0 auto;
+  display: block;
+  list-style: none;
+  padding: 0;
+  &--item {
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    @for $icon-nb from 0 to 5 {
+      .square#{$icon-nb}__icon-#{$icon-nb} {
+        transform-origin: calc($squareSizeXL / 2) calc($squareSizeXL / 2);
+        width: $squareIconSizeXL;
+        height: $squareIconSizeXL;
+        transform: rotate(0deg + 90 * $icon-nb);
+        .square#{$icon-nb}__img-#{$icon-nb} {
+          display: block;
+          opacity: 0.8;
+          width: 80%;
+          height: 80%;
+          object-fit: cover;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}
+.square__listXS {
+  width: $squareSizeXS;
+  height: $squareSizeXS;
+  margin: 0 auto;
+  display: block;
+  list-style: none;
+  padding: 0;
+  &--item {
+    text-align: center;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    @for $icon-nb from 0 to 5 {
+      .square#{$icon-nb}__icon-#{$icon-nb} {
+        //  Recommendation: math.div(300px, 2) or calc(300px / 2)
+        transform-origin: calc($squareSizeXS / 2) calc($squareSizeXS / 2);
+        width: $squareIconSizeXS;
+        height: $squareIconSizeXS;
+        transform: rotate(0deg + 90 * $icon-nb);
+        .square#{$icon-nb}__img-#{$icon-nb} {
+          display: block;
+          opacity: 0.8;
+          width: 80%;
+          height: 80%;
+          object-fit: cover;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}

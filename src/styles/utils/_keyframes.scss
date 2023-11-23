@@ -1,0 +1,208 @@
+@keyframes skew-y-shakeing {
+  0% {
+    transform: skewY(-5deg);
+  }
+  5% {
+    transform: skewY(5deg);
+  }
+  10% {
+    transform: skewY(-5deg);
+  }
+  15% {
+    transform: skewY(5deg);
+  }
+  20% {
+    transform: skewY(0deg);
+  }
+  100% {
+    transform: skewY(0deg);
+  }
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes translateNdFadeIn {
+  from {
+    opacity: 0;
+    margin-left: -100%;
+  }
+  to {
+    opacity: 1;
+    margin-left: 0%;
+  }
+}
+
+@keyframes randomBlinking {
+  0% {
+    opacity: 0.5;
+  }
+  7% {
+    opacity: 1;
+  }
+  8% {
+    opacity: 0.7;
+  }
+  10% {
+    opacity: 1;
+  }
+  12% {
+    opacity: 0.6;
+  }
+  14% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  26% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes growUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes linearGrowUpX {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes linearGrowUpY {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes growUpX {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(100);
+  }
+}
+
+@keyframes homeIconFadeInOut {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes spinCircularCarousel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// @keyframes spinCircularCarousel {
+//   0% {
+//     transform: rotateZ(0deg);
+//   }
+//   100% {
+//     transform: rotateZ(360deg);
+//   }
+// }
+
+@keyframes glow {
+  from {
+    text-shadow:
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 30px #919191,
+      0 0 40px #919191,
+      0 0 50px #919191,
+      0 0 60px #919191,
+      0 0 70px #919191;
+  }
+  to {
+    text-shadow:
+      0 0 20px #fff,
+      0 0 30px #bbbbbb,
+      0 0 40px #bbbbbb,
+      0 0 50px #bbbbbb,
+      0 0 60px #bbbbbb,
+      0 0 70px #bbbbbb,
+      0 0 80px #bbbbbb;
+  }
+}

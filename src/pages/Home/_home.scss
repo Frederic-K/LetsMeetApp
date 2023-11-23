@@ -1,0 +1,46 @@
+.home {
+  &__jobTitle {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // position: relative;
+    &--loading {
+      // position: absolute;
+      opacity: 0;
+      // opacity: 1;
+      animation: blinking 3s ease-in-out 1s;
+      // animation-delay: 2s;
+      // animation-duration: 3s;
+      // @include text-radial-gradient-Title;
+    }
+    &--name {
+      // position: absolute;
+      opacity: 0;
+      animation: fadeIn 500ms ease-in 4s forwards;
+      // animation: glow 1s ease-in-out 3s infinite alternate;
+      // animation-delay: 5s;
+      // animation-duration: 500ms;
+      // animation-timing-function: ease-in;
+      // animation-fill-mode: forwards;
+      // @include text-radial-gradient-Title;
+    }
+  }
+  // &__myName {
+  //   // animation: glow 1s ease-in-out 3s infinite alternate;
+  // }
+  &__bar {
+    &--progress {
+      animation: linearGrowUpX 2s ease-in-out forwards;
+    }
+  }
+  &__logo {
+    opacity: 0;
+    animation: fadeIn 500ms ease-in 4s forwards;
+  }
+  // &__lightTheme {
+  //   &--carouselBG {
+  //     opacity: 0;
+  //     animation: fadeIn 500ms ease-in 4s forwards;
+  //   }
+  // }
+}

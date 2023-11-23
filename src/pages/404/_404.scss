@@ -1,0 +1,10 @@
+.error404 {
+  &__text {
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+  &__btn {
+    &--link {
+      text-decoration: none;
+    }
+  }
+}

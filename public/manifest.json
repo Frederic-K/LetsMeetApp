@@ -1,0 +1,17 @@
+{
+  "short_name": "Let's meet",
+  "name": "Let's meet",
+  "author": "Frédéric KREUDER",
+  "description": "It's a small RectJS app that aims to get to know each other :D",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

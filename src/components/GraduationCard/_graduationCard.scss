@@ -1,0 +1,9 @@
+@for $graduation-nb from 0 to 5 {
+  .profile__graduation--#{$graduation-nb} {
+    opacity: 0;
+    animation: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: ($graduation-nb * 100)+0ms;
+  }
+}

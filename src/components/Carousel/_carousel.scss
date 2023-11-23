@@ -1,0 +1,18 @@
+.project {
+  // &__title {
+  //   @include text-radial-gradient-Text;
+  // }
+  &__btn {
+    :hover {
+      color: #ff8c1a;
+    }
+  }
+}
+
+.active {
+  animation: fadeIn 3000ms ease-in-out;
+}
+
+.not-avtive {
+  display: none;
+}

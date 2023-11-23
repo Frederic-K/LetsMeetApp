@@ -1,0 +1,41 @@
+{
+  "profileLinks": [
+    {
+      "profileID": "1",
+      "profileItem": "Profile",
+      "profileLink": "/profile"
+    },
+    {
+      "profileID": "2",
+      "profileItem": "CV",
+      "profileLink": "/cv"
+    },
+    {
+      "profileID": "3",
+      "profileItem": "Contact",
+      "profileLink": "/contact"
+    }
+  ],
+  "pageLinks": [
+    {
+      "pageID": "1",
+      "pageName": "Acceuil",
+      "pageLink": "/"
+    },
+    {
+      "pageID": "2",
+      "pageName": "Projets",
+      "pageLink": "/projects"
+    },
+    {
+      "pageID": "3",
+      "pageName": "Compétences",
+      "pageLink": "/skills"
+    },
+    {
+      "pageID": "4",
+      "pageName": "Expériences Professionelles",
+      "pageLink": "/pofessional-xp"
+    }
+  ]
+}
