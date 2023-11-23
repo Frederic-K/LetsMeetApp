@@ -41,12 +41,6 @@ import rigorWhitePix from '../../assets/IconSoftSkill/rigor1.png'
 import serviceQualiteWhitePix from '../../assets/IconSoftSkill/service-de-qualite1.png'
 import solutionWhitePix from '../../assets/IconSoftSkill/solution1.png'
 import solutionAWhitePix from '../../assets/IconSoftSkill/solutionA1.png'
-// Graduition icon bk
-import certificatePix from '../../assets/IconGraduation/certificate.png'
-import diplomePix from '../../assets/IconGraduation/diplome.png'
-// Graduition icon white
-import certificateWhitePix from '../../assets/IconGraduation/certificate1.png'
-import diplomeWhitePix from '../../assets/IconGraduation/diplome1.png'
 
 ////////////////////////////////////////////////
 ///////////////////////////////////////////////

@@ -5,7 +5,6 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import Grid from '@mui/material/Unstable_Grid2'
 import { Typography } from '@mui/material'
 import VerifiedIcon from '@mui/icons-material/Verified'
-import { grey } from '@mui/material/colors'
 
 export default function DropdownMenu(data) {
   const skillsData = data.data
@@ -16,7 +15,6 @@ export default function DropdownMenu(data) {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
-          // sx={{ backgroundColor: grey[100] }}
         >
           <Typography sx={{ fontStyle: 'italic' }}>Compétences :</Typography>
         </AccordionSummary>
@@ -26,7 +24,6 @@ export default function DropdownMenu(data) {
             spacing={2}
             sx={{
               display: 'flex',
-              // alignItems: 'center',
               maxWidth: '768px',
             }}
           >
