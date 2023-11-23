@@ -1,5 +1,5 @@
 // MUI
-import { Box, Container } from '@mui/material'
+import { Box } from '@mui/material'
 
 export default function CircularCarouselItem(data) {
   const array4SkillWhitePix = data?.data
@@ -16,7 +16,6 @@ export default function CircularCarouselItem(data) {
         >
           <Box
             display={{ xs: 'none', md: 'flex' }}
-            // key={`squareXL-${idx}`}
             className={`carousel__squareXL${idx}`}
             sx={{
               position: 'absolute',

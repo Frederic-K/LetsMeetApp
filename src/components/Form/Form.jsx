@@ -15,10 +15,8 @@ import {
   TextField,
   Autocomplete,
   Typography,
-  Paper,
 } from '@mui/material'
 import SendIcon from '@mui/icons-material/Send'
-import DeleteIcon from '@mui/icons-material/Delete'
 import HighlightOffIcon from '@mui/icons-material/HighlightOff'
 // Component
 import CircularLoader from '../Loader/Loader'
@@ -91,8 +89,6 @@ export default function Form({ setIsFormShow }) {
     if (signAstro === '' || null) {
       errors.signAstro = 'Veuillez choisir un signe astrologique'
       setIsErrorSignAstro(true)
-      // setSignAstro(signsAstro[0])
-      // console.log('astrosign error', errors.signAstro)
     }
     return errors
   }
@@ -100,8 +96,6 @@ export default function Form({ setIsFormShow }) {
   // Launch values checking when submitting form
   const handelSubmitClick = (e) => {
     e.preventDefault()
-    // console.log('signAstro', signAstro)
-    // console.log('userInputFields', userInputFields)
     setErrors(checkInputTextValues(userInputFields))
     setSubmitting(true)
   }
@@ -117,10 +111,7 @@ export default function Form({ setIsFormShow }) {
 
   // Save nd dispatch new created employee
   const validationDatas = () => {
-    // setIsModalOpen(true)
     setIsAstroCardShown(true)
-    //setIsFormShow(false)
-    // console.log('TOTO IS BACK')
   }
 
   // Clean when reset button clicked
@@ -166,7 +157,6 @@ export default function Form({ setIsFormShow }) {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                // pt: 8,
                 px: 2,
                 pb: 3,
                 backgroundColor: `${
@@ -176,16 +166,12 @@ export default function Form({ setIsFormShow }) {
             >
               <Typography
                 className="text-radial-gradient-Text"
-                // variant="h4"
                 sx={{
                   width: '230px',
                   fontSize: '20px',
                   fontFamily: 'monospace',
                   fontWeight: 900,
-                  // letterSpacing: '.2rem',
                   textAlign: 'center',
-                  // border: '1px solid black',
-                  // borderRadius: '5px',
                   py: 2,
                 }}
               >
@@ -242,7 +228,6 @@ export default function Form({ setIsFormShow }) {
                 />
                 {isErrorSignAstro ? (
                   <Autocomplete
-                    // value={signAstro}
                     onChange={(event, newValue) => {
                       setSignAstro(newValue)
                     }}
@@ -264,7 +249,6 @@ export default function Form({ setIsFormShow }) {
                   />
                 ) : (
                   <Autocomplete
-                    // value={signAstro}
                     onChange={(event, newValue) => {
                       setSignAstro(newValue)
                     }}
@@ -276,11 +260,7 @@ export default function Form({ setIsFormShow }) {
                     options={signsAstro}
                     sx={{ width: 250 }}
                     renderInput={(params) => (
-                      <TextField
-                        {...params}
-                        // error
-                        label="Signe Astrologique *"
-                      />
+                      <TextField {...params} label="Signe Astrologique *" />
                     )}
                   />
                 )}
@@ -289,7 +269,6 @@ export default function Form({ setIsFormShow }) {
                 sx={{
                   width: '250px',
                   display: 'flex',
-                  // justifyContent: 'space-between',
                   justifyContent: 'center',
                 }}
               >

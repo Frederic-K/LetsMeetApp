@@ -1,21 +1,15 @@
 // React
 import { useState, useEffect } from 'react'
-// Component
-import Typewriter from '../Typewriter/Typewriter'
 // MUI
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp'
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown'
-import { Box, Container, IconButton, Paper, Typography } from '@mui/material'
+import { Box, Container, IconButton } from '@mui/material'
 
 export default function Carousel(data) {
   const projectCards = data?.data
-  // const projectCardsIndex = index
-  // console.log('Studentcard', projectCards)
-  // console.log('index', projectCardsIndex)
   const [pause, setPause] = useState(false)
   const [currentIndex, setCurrentIndex] = useState(0)
   const totalSlides = projectCards.length
-  // console.log('totalSlides', projectCards.length)
 
   const onArrowClick = (direction) => {
     const increment = direction === 'up' ? -1 : 1

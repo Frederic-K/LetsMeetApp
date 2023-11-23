@@ -8,15 +8,12 @@ import { Box, Paper } from '@mui/material'
 import Image from 'mui-image'
 // Asset
 import profileCardBanner from '../../assets/Background/wallpaperflare.com_wallpaper-11-banner.jpg'
-// Component
-// import Slider from '../Slider/Slider'
 // Data
 import { centerOfInterest } from '../../utils/data/profileContent'
 
 export default function CenterOfInterest() {
   const { modeTheme } = useSelector(modeThemeSelector)
   return (
-    // <Container>
     <>
       <Box>
         <Paper
@@ -26,9 +23,7 @@ export default function CenterOfInterest() {
           <Box
             sx={{
               width: '100%',
-              // height: '100%',
               display: 'flex',
-              // justifyContent: 'center',
               alignItems: 'center',
               flexDirection: 'column',
               gap: '10px',
@@ -40,12 +35,10 @@ export default function CenterOfInterest() {
                 justifyContent: 'center',
                 alignItems: 'center',
                 width: '100%',
-                // height: '115.75px',
                 backgroundImage: `url(${profileCardBanner})`,
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
-                // overflow: 'hidden',
                 borderTopLeftRadius: '5px',
                 borderTopRightRadius: '5px',
               }}
@@ -77,7 +70,6 @@ export default function CenterOfInterest() {
                   className={`profile__centerOfInterest--${idx}`}
                   key={`centerOfInterest-${idx}`}
                   sx={{
-                    // width: '100%',
                     display: 'flex',
                     gap: 2,
                   }}
@@ -98,11 +90,6 @@ export default function CenterOfInterest() {
                       }}
                     />
                   )}
-                  {/* // <Image
-                  //   src={el.centerOfInterestBkPix}                    
-                  //   width="40px"
-                  //   height="40px"
-                  // /> */}
                   <Typography
                     variant="body2"
                     // color="text.secondary"
@@ -117,7 +104,5 @@ export default function CenterOfInterest() {
         </Paper>
       </Box>
     </>
-
-    // </Container>
   )
 }

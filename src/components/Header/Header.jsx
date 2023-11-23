@@ -31,9 +31,6 @@ import LogoFK_red from '../../assets/FKLogo/LogoFK-waterpx-red3-100px.png'
 import useFetch from '../../utils/api/useFetch'
 // Toaster
 import toast, { Toaster } from 'react-hot-toast'
-// Data
-// import pagesLinks from '../../utils/data/pagesLinks.json'
-// import profileLinks from '../../utils/data/profileLinks.json'
 // Component
 import CircularLoader from '../Loader/Loader'
 
@@ -57,15 +54,12 @@ export default function HeaderAppBar() {
   }
 
   const { isLoading, data, error } = useFetch('../data/navLinks.json')
-  // console.log('data', data?.pageLinks)
-  // console.log('data', data?.profileLinks)
 
   if (error) {
     toast.error('Oups... une erreur est survenue')
   }
 
   const pagesLinks = data?.pageLinks
-  // console.log('pagesLinks', pagesLinks)
 
   const profileLinks = data?.profileLinks
 
@@ -76,7 +70,6 @@ export default function HeaderAppBar() {
 
   const navigate = useNavigate()
 
-  // const theme = useTheme()
   const colorMode = useContext(ColorModeContext)
 
   /// TRY TO WRAP WITH USEEFFECT TO AVOID CONSOLE WARNING
@@ -89,17 +82,12 @@ export default function HeaderAppBar() {
       {isLoading ? (
         <CircularLoader />
       ) : (
-        <AppBar
-          // className="navBar"
-          // position="static"
-          position="fixed"
-        >
+        <AppBar position="fixed">
           <Container maxWidth="false" className="navBar">
             <Toolbar disableGutters>
               <Tooltip title="Theming !">
                 <Button
                   className="navBarLogoFK__btn"
-                  // href="/contact"
                   onClick={colorMode.toggleColorMode}
                   sx={{
                     p: 0,
@@ -113,8 +101,6 @@ export default function HeaderAppBar() {
                       height: 40,
                       bgcolor: 'inherit',
                       display: { xs: 'none', md: 'flex' },
-
-                      // mr: 1,
                     }}
                   >
                     <img
@@ -136,7 +122,6 @@ export default function HeaderAppBar() {
                   variant="h6"
                   noWrap
                   component="a"
-                  // href="/"
                   sx={{
                     mr: 2,
                     display: { xs: 'none', md: 'flex' },
@@ -161,7 +146,6 @@ export default function HeaderAppBar() {
                   aria-controls="menu-appbar"
                   aria-haspopup="true"
                   onClick={handleOpenNavMenu}
-                  // color="inherit"
                   sx={{
                     color: 'white',
                     '&:hover': { color: orange[500] },
@@ -215,10 +199,9 @@ export default function HeaderAppBar() {
                   ))}
                 </Menu>
               </Box>
-              <Tooltip title="Rock'n Roll !">
+              <Tooltip title="Theming !">
                 <Button
                   className="navBarLogoFK__btn"
-                  // href="/contact"
                   onClick={colorMode.toggleColorMode}
                   sx={{ p: 0 }}
                 >
@@ -229,7 +212,6 @@ export default function HeaderAppBar() {
                       height: 40,
                       bgcolor: 'inherit',
                       display: { xs: 'flex', md: 'none' },
-                      // mr: 1,
                     }}
                   >
                     <img
@@ -250,7 +232,6 @@ export default function HeaderAppBar() {
                 variant="h5"
                 noWrap
                 component="a"
-                // href="/"
                 sx={{
                   mr: 2,
                   display: { xs: 'flex', md: 'none' },
@@ -342,7 +323,6 @@ export default function HeaderAppBar() {
                       >
                         <Typography
                           textAlign="center"
-                          // sx={{ color: 'whitesmoke' }} <<<<< SET COLOR BY THEME
                           sx={{
                             color: `${
                               modeTheme !== 'dark' ? 'black' : 'white'
