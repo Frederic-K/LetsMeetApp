@@ -8,13 +8,10 @@ import Typography from '@mui/material/Typography'
 import { grey } from '@mui/material/colors'
 
 export default function StudentProjectlistCard(data) {
-  // console.log('data', data)
   const projectData = data?.data
-  //console.log('card data', projectData)
   return (
     <Card
       className={`project__card--${projectData.studentProjectID}`}
-      // variant="outlined"
       sx={{ width: 343, height: 345 }}
     >
       <CardMedia
@@ -45,7 +42,6 @@ export default function StudentProjectlistCard(data) {
             maxHeight: 50,
             color: 'text.secondary',
             overflow: 'hidden',
-            // whiteSpace: 'nowrap',
             textOverflow: 'hidden',
           }}
         >
@@ -65,7 +61,6 @@ export default function StudentProjectlistCard(data) {
         </Typography>
       </CardContent>
       <CardActions sx={{ pt: 0 }}>
-        {/* <Button size="small">Share</Button> */}
         <Button size="small" href={projectData.studentProjectLink}>
           Learn More
         </Button>
