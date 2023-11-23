@@ -30,8 +30,6 @@ export default function CircularCarousel() {
     array4SkillWhitePix3,
   ]
 
-  console.log('squareOfSkillWhitePix', squareOfSkillWhitePix)
-
   return (
     <>
       <Box
