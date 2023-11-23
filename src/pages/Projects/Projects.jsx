@@ -52,7 +52,7 @@ export default function Projects() {
               p: 1,
             }}
           >
-            <Typewriter text="Projects" delay={70} />
+            <Typewriter text="Projets" delay={70} />
           </Typography>
         </Paper>
         <Carousel data={arrayProjectCards} />
