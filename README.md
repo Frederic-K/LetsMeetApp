@@ -1,6 +1,6 @@
 # Author
 
-Frédéric KREUDER,
+Frédéric KREUDER
 
 # Category
 
@@ -9,6 +9,9 @@ Application : SPA (Single Page Application)
 # Resume
 
 It's a small RectJS app that aims to get to know each other :D
+Whant to test "Theme" or "Form" : dare to click on my logo !
+
+![banner](./src/assets/MyCVApp.png)
 
 # Getting Started with Create React App
 
