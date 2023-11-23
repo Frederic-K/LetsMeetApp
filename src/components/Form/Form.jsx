@@ -105,7 +105,6 @@ export default function Form({ setIsFormShow }) {
     if (Object.keys(errors).length === 0 && submitting) {
       validationDatas()
     }
-    console.log('errors', errors)
     // eslint-disable-next-line
   }, [errors])
 
