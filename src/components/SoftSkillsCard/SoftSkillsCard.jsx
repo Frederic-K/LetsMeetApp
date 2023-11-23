@@ -1,9 +1,7 @@
 // MUI
 import Typography from '@mui/material/Typography'
 import VerifiedIcon from '@mui/icons-material/Verified'
-import { Box, Container, Paper } from '@mui/material'
-// MUI Image
-// import Image from 'mui-image'
+import { Box, Paper } from '@mui/material'
 // Component
 import Slider from '../Slider/Slider'
 // Data
@@ -11,7 +9,6 @@ import { softSkillsList } from '../../utils/data/profileContent'
 
 export default function SoftSkillsCard() {
   return (
-    // <Container>
     <Box>
       <Paper elevation={12} sx={{ display: 'flex', width: '295px' }}>
         <Box
@@ -62,7 +59,6 @@ export default function SoftSkillsCard() {
               <Typography
                 className={`profile__softSkill--${idx}`}
                 variant="body2"
-                // color="text.secondary"
                 sx={{ fontSize: '1rem', py: 1 }}
                 key={`softSkill-${idx}`}
               >
@@ -76,6 +72,5 @@ export default function SoftSkillsCard() {
         </Box>
       </Paper>
     </Box>
-    // </Container>
   )
 }

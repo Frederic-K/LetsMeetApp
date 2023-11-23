@@ -1,6 +1,5 @@
 // MUI
 import { Paper, Box, Typography } from '@mui/material'
-// import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline'
 import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled'
 // Asset
 import JobTitleBackground from '../../assets/Background/wallpaperflare.com_wallpaper-11-banner.jpg'
@@ -8,21 +7,8 @@ import JobTitleBackground from '../../assets/Background/wallpaperflare.com_wallp
 import DropdownMenu from '../Accordion/Accordion'
 
 export default function ProfessionnalXPCard(data) {
-  // console.log('data2', data)
-  // console.log('data3', data.data.description)
   const xp = data?.data
   return (
-    // <Box
-    //   // className={`xp__job--${xp.indexXP}`}
-    //   sx={{
-    //     width: '100%',
-    //     display: 'flex',
-    //     flexDirection: 'column',
-    //     justifyContent: 'center',
-    //     alignItems: 'center',
-    //     // overflow: 'auto',
-    //   }}
-    // >
     <Paper
       elevation={12}
       component="section"
@@ -56,14 +42,12 @@ export default function ProfessionnalXPCard(data) {
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monospace',
               fontWeight: 900,
-              // fontSize: '1.5rem',
               color: '#ffffff',
             }}
           >
             {xp.jobTitle}
           </Typography>
           <Typography
-            // variant="h6"
             className="text-radial-gradient-Text"
             sx={{
               display: { xs: 'flex', md: 'none' },

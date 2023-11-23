@@ -23,7 +23,6 @@ import ToggleColorMode from './styles/themes/ToggleColorMode'
 
 function App() {
   const { colorMode, themeName, theme, mode } = ToggleColorMode()
-  // console.log('mode init', mode)
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>

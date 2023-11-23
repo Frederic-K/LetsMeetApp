@@ -34,37 +34,9 @@ export default function Home() {
         justifyContent: 'center',
         alignItems: 'center',
         position: 'relative',
-        // overflow: 'hidden',
-        // flexGrow: 1,
-        // overflow: 'hidden',
-        // backgroundColor: 'rgba(255, 255, 255, 0.5)',
         py: 12,
       }}
     >
-      {/* {modeTheme !== 'dark' ? (
-        <>
-          <Box
-            sx={{
-              display: { xs: 'none', md: 'flex' },
-              position: 'absolute',
-              width: '500px',
-              height: '500px',
-              borderRadius: '50%',
-              backgroundColor: 'rgba(255, 255, 255, 0.5)',
-            }}
-          />
-          <Box
-            sx={{
-              display: { xs: 'flex', md: 'none' },
-              position: 'absolute',
-              width: '320px',
-              height: '320px',
-              borderRadius: '50%',
-              backgroundColor: 'rgba(255, 255, 255, 0.5)',
-            }}
-          />
-        </>
-      ) : null} */}
       {isFormShown ? (
         <Form setIsFormShow={setIsFormShow} />
       ) : (
@@ -97,17 +69,12 @@ export default function Home() {
           ) : null} */}
           <Box
             sx={{
-              // width: '500px',
-              // height: '500px',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
               justifyContent: 'center',
               borderRadius: '25px',
-              // borderRadius: '50%',
               zIndex: 5,
-              // alignItems: 'flex-start',
-              // backgroundColor: 'rgba(0, 0, 0, 0.3)',
             }}
           >
             <Box
@@ -118,10 +85,8 @@ export default function Home() {
                 variant="h4"
                 noWrap
                 sx={{
-                  // mr: 2,
                   fontFamily: 'monospace',
                   fontWeight: 700,
-                  //letterSpacing: '.2rem',
                   textAlign: 'center',
                 }}
               >
@@ -136,10 +101,8 @@ export default function Home() {
                 variant="h5"
                 noWrap
                 sx={{
-                  // mr: 2,
                   fontFamily: 'monospace',
                   fontWeight: 700,
-                  //letterSpacing: '.2rem',
                   textAlign: 'center',
                 }}
               >
@@ -150,7 +113,6 @@ export default function Home() {
               className="home__bar"
               sx={{
                 width: { xs: '180px', md: '300px' },
-                // height: '300px',
               }}
             >
               <Box
@@ -170,9 +132,6 @@ export default function Home() {
                 justifyContent: 'center',
                 alignItems: 'center',
                 height: 50,
-                // border: 2,
-                // borderColor: grey[900],
-                // backgroundColor: grey[300],
                 position: 'relative',
               }}
             >
@@ -181,12 +140,8 @@ export default function Home() {
                 variant="h4"
                 noWrap
                 sx={{
-                  // mr: 2,
                   fontFamily: 'monospace',
                   fontWeight: 900,
-                  // color: grey[900],
-                  // letterSpacing: '.2rem',
-                  // textAlign: 'center',
                   position: 'absolute',
                 }}
               >
@@ -198,13 +153,8 @@ export default function Home() {
                 variant="h4"
                 noWrap
                 sx={{
-                  // mr: 2,
                   fontFamily: 'monospace',
                   fontWeight: 'bold',
-                  // color: grey[900],
-                  //letterSpacing: '.2rem',
-                  // textAlign: 'center',
-                  // position: 'absolute',
                 }}
               >
                 FrontEndDevelopment
@@ -217,9 +167,6 @@ export default function Home() {
                 justifyContent: 'center',
                 alignItems: 'center',
                 height: 50,
-                // border: 2,
-                // borderColor: grey[900],
-                // backgroundColor: grey[300],
                 position: 'relative',
               }}
             >
@@ -228,12 +175,8 @@ export default function Home() {
                 variant="h5"
                 noWrap
                 sx={{
-                  // mr: 2,
                   fontFamily: 'monospace',
                   fontWeight: 900,
-                  // color: grey[900],
-                  //letterSpacing: '.2rem',
-                  // textAlign: 'center',
                   position: 'absolute',
                 }}
               >
@@ -245,13 +188,8 @@ export default function Home() {
                 variant="h5"
                 noWrap
                 sx={{
-                  // mr: 2,
                   fontFamily: 'monospace',
                   fontWeight: 'bold',
-                  // color: grey[900],
-                  // letterSpacing: '.2rem',
-                  // textAlign: 'center',
-                  // position: 'absolute',
                 }}
               >
                 FrontEndDevelopment
@@ -280,7 +218,6 @@ export default function Home() {
             </Box>
           </Box>
           <Box
-            // className="circularCarousel"
             sx={{
               width: '326px',
               height: '326px',

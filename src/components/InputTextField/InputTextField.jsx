@@ -24,7 +24,6 @@ export default function InputTextField(props) {
       {isError ? (
         <TextField
           error
-          // fullWidth
           required
           id={errorUserId}
           name={errorName}
@@ -37,7 +36,6 @@ export default function InputTextField(props) {
         />
       ) : (
         <TextField
-          // fullWidth
           autoFocus={autoFocus}
           required
           id={id}

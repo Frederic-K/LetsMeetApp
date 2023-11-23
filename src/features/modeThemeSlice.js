@@ -1,8 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-  modeTheme: localStorage.getItem('modeTheme') ?? '',
-  // modeTheme: '',
+  modeTheme: '',
 }
 
 export const modeThemeSlice = createSlice({
@@ -11,9 +10,7 @@ export const modeThemeSlice = createSlice({
   reducers: {
     // State management from actions
     addModeTheme: (state, action) => {
-      // console.log('action.payload', action.payload)
       state.modeTheme = action.payload
-      // localStorage.setItem('modeTheme', state.modeTheme)
     },
     clearModeTheme: () => {
       return {

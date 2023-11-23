@@ -38,7 +38,6 @@ export default function CV() {
       component="main"
       sx={{
         minHeight: '100vh',
-        // height: '100vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -46,36 +45,17 @@ export default function CV() {
         py: 12,
       }}
     >
-      {/* <Box
-        sx={{
-          width: '100%',
-          height: '100%',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          // marginTop: 20,
-          // marginBottom: 20,
-          // py: '70px',
-          // flexGrow: 1,
-          // overflow: 'auto',
-        }}
-      > */}
       <Box
         sx={{
-          // width: '100%',
-          // height: '100vh',
           display: { xs: 'none', lg: 'flex' },
-          // justifyContent: 'center',
           alignItems: 'center',
           position: 'relative',
-          // overflow: 'auto',
         }}
       >
         <Paper
           elevation={6}
           sx={{
             width: '500px',
-            // height: 'auto',
             position: 'absolute',
             left: -270,
             transform: 'rotate(-90deg)',
@@ -107,18 +87,7 @@ export default function CV() {
               alignItems: 'center',
             }}
           >
-            <Image
-              src={MyCVimg}
-              // sx={{ width: 'auto', maxHeight: '600px' }}
-              sx={{ maxWidth: '500px' }}
-
-              // className="cv__xl--img"
-            />
-            {/* <img
-                src={MyCVimg}
-                alt="CV Frédéric KREUDER"
-                style={{ width: '550px' }}
-              /> */}
+            <Image src={MyCVimg} sx={{ maxWidth: '500px' }} />
           </Box>
         </Paper>
         <Box sx={{ height: 320, transform: 'translateZ(0px)', flexGrow: 1 }}>
@@ -139,13 +108,9 @@ export default function CV() {
           </SpeedDial>
         </Box>
       </Box>
-      {/* <Box
-        // sx={{ display: 'flex', overflow: 'auto' }}
-        > */}
       <Card
         className="growUp"
         sx={{
-          // height: '100%',
           display: { sm: 'flex', lg: 'none' },
           flexDirection: 'column',
         }}
@@ -153,7 +118,6 @@ export default function CV() {
         <CardMedia
           component="img"
           sx={{
-            // display: { xs: 'flex', md: 'none' },
             maxHeight: 400,
             maxWidth: 'auto',
             objectPosition: 'top',
@@ -189,8 +153,6 @@ export default function CV() {
           </Button>
         </CardActions>
       </Card>
-      {/* </Box> */}
-      {/* </Box> */}
     </Container>
   )
 }

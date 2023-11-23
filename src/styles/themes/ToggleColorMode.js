@@ -18,7 +18,6 @@ export default function ToggleColorMode() {
     }),
 
     [],
-    // console.log('mode from toggle fct', mode),
     dispatch(clearModeTheme()),
     dispatch(addModeTheme(mode)),
   )

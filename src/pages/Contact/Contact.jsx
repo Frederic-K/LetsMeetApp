@@ -15,28 +15,17 @@ export default function Contacts() {
       component="main"
       sx={{
         minHeight: '100vh',
-        // height: '100vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         py: 12,
-        // mt: 2,
       }}
     >
-      {/* <Box
-        sx={{
-          height: '100%',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-        }}
-      > */}
       <Box
         sx={{
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          // overflow: 'auto',
         }}
       >
         <Box sx={{ width: '370px', mb: 4 }}>
@@ -93,7 +82,6 @@ export default function Contacts() {
           ))}
         </Box>
       </Box>
-      {/* </Box> */}
     </Container>
   )
 }

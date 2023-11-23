@@ -6,14 +6,12 @@ import useFetch from '../../utils/api/useFetch'
 import Typewriter from '../../components/Typewriter/Typewriter'
 // Toaster
 import toast, { Toaster } from 'react-hot-toast'
-// import Error404 from '../404/404'
 // Components
 import CircularLoader from '../../components/Loader/Loader'
 import ProfessionnalXPCard from '../../components/ProfessionalXPCard/ProfessionalXPCard'
 
 export default function ProfessionalXP() {
   const { data, isLoading, error } = useFetch('../data/experiences.json')
-  // console.log('data', data)
 
   if (error) {
     toast.error('Oups... une erreur est survenue')
@@ -26,14 +24,7 @@ export default function ProfessionalXP() {
         component="main"
         sx={{
           minHeight: '100vh',
-          // height: '100vh',
-          // display: 'flex',
-          // flexDirection: 'column',
-          // justifyContent: 'center',
-          // alignItems: 'center',
           py: 12,
-          // mt: 2,
-          // overflow: 'auto',
         }}
       >
         {isLoading ? (
@@ -44,7 +35,6 @@ export default function ProfessionalXP() {
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
-              // overflow: 'auto',
             }}
           >
             <Paper
@@ -95,7 +85,6 @@ export default function ProfessionalXP() {
             {data.map((el, idx) => (
               <ProfessionnalXPCard data={el} key={`xp-${idx}`} />
             ))}
-            {/* <ProfessionnalXPCard data={data} /> */}
           </Box>
         )}
       </Container>

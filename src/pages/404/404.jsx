@@ -5,10 +5,6 @@ import { useSelector } from 'react-redux'
 import { modeThemeSelector } from '../../features/modeThemeSlice'
 // MUI
 import { Box, Button, Container, Typography } from '@mui/material'
-// MUI Image
-// import Image from 'mui-image'
-// Component
-import Typewriter from '../../components/Typewriter/Typewriter'
 
 export default function Error404() {
   const { modeTheme } = useSelector(modeThemeSelector)
@@ -25,24 +21,12 @@ export default function Error404() {
         py: 12,
       }}
     >
-      {/* <Box className="error404__img">
-        <Image
-          src="https://cdn.dribbble.com/userupload/8726278/file/original-ab1bde6f9c74de5c8961f7fe84990cd4.gif"
-          sx={{
-            maxWidth: '580px',
-            borderRadius: '50%',
-            border: '2px solid #ff9800',
-          }}
-        />
-      </Box> */}
       <Box
         className="error404__text text-radial-gradient-Text"
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          // justifyContent: 'center',
           alignItems: 'center',
-          // p: 0,
         }}
       >
         <Typography
@@ -63,7 +47,6 @@ export default function Error404() {
           }}
         >
           Page not found
-          {/* <Typewriter text="Page not found" delay={100} /> */}
         </Typography>
       </Box>
       <Button

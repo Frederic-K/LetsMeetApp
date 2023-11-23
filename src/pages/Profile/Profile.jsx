@@ -13,7 +13,6 @@ export default function Profile() {
       component="main"
       sx={{
         minHeight: '100vh',
-        // height: '100vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -22,19 +21,6 @@ export default function Profile() {
         py: 12,
       }}
     >
-      {/* <Box
-        sx={{
-          // height: '100%',
-          width: '100%',
-          display: 'flex',
-          flexDirection: 'column',
-          // justifyContent: 'center',
-          alignItems: 'center',
-          gap: 6,
-          p: 3,
-          overflow: 'auto',
-        }}
-      > */}
       <Paper elevation={12}>
         <Typography
           className="text-radial-gradient-Text"
@@ -67,10 +53,7 @@ export default function Profile() {
       <Box
         sx={{
           display: { xs: 'flex', md: 'none', lg: 'none' },
-          // width: '100%',
           flexDirection: 'column',
-          // justifyContent: 'center',
-          // alignItems: 'center',
           gap: 3,
         }}
       >
@@ -78,7 +61,6 @@ export default function Profile() {
         <GraduationCard />
         <CenterOfInterest />
       </Box>
-      {/* </Box> */}
     </Container>
   )
 }

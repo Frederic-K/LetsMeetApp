@@ -19,23 +19,15 @@ import { skillsList } from '../../utils/data/skillsList'
 
 export default function Skills() {
   const { modeTheme } = useSelector(modeThemeSelector)
-  // console.log('modetheme from redux', modeTheme)
-  // console.log('mode', mode.data)
-  // const modeTheme = mode?.data
   return (
     <Container
       component="main"
       sx={{
         minHeight: '100vh',
-        // width: '100%',
-        // height: '100vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        // flexGrow: 1,
         py: 12,
-        // mt: 2,
-        // overflow: 'auto',
       }}
     >
       <Grid
@@ -46,8 +38,6 @@ export default function Skills() {
           alignItems: 'center',
           maxWidth: '768px',
           height: '90%',
-
-          // overflow: 'auto',
         }}
       >
         <Grid xs={12}>
@@ -84,7 +74,6 @@ export default function Skills() {
                 variant="outlined"
                 href={el.iconSkillLinkWeb}
                 key={el.iconSkillName}
-                // className={`${mode !== 'dark' ? 'skill__btn--BbLight' : null}`}
                 sx={{
                   backgroundColor: `${
                     modeTheme !== 'dark' ? 'RGBA(255,255,255,0.7)' : null
@@ -98,7 +87,6 @@ export default function Skills() {
                 }}
               >
                 <Avatar
-                  // variant="square"
                   src={el.iconSkillPath}
                   alt={el.iconSkillName}
                   sx={{
@@ -110,7 +98,6 @@ export default function Skills() {
                   }}
                 ></Avatar>
                 <Avatar
-                  // variant="square"
                   src={el.iconSkillPath}
                   alt={el.iconSkillName}
                   sx={{
@@ -152,7 +139,6 @@ export default function Skills() {
           </Grid>
         ))}
       </Grid>
-      {/* </Box> */}
     </Container>
   )
 }

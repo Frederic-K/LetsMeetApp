@@ -5,7 +5,7 @@ import { iconWhiteSoftSkillPix } from '../../utils/data/profileContent'
 // Asset
 import profileCardBanner from '../../assets/Background/wallpaperflare.com_wallpaper-11-banner.jpg'
 // MUI
-import { Box, Typography } from '@mui/material'
+import { Box } from '@mui/material'
 // MUI Image
 import Image from 'mui-image'
 
@@ -58,7 +58,6 @@ export default function Slider() {
         src={iconWhiteSoftSkillPix[currentIndex]}
         width="50px"
         height="50px"
-        // bgColor="black"
         fit="cover"
       />
     </Box>
