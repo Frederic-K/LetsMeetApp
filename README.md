@@ -11,7 +11,7 @@ Application : SPA (Single Page Application)
 It's a small RectJS app that aims to get to know each other :D
 Whant to test "Theme" or "Form" : dare to click on my logo !
 
-![banner](./src/assets/MyCVApp.png)
+![banner](./src/assets/ReadmeImg/MyCVApp.png)
 
 # Getting Started with Create React App
 
