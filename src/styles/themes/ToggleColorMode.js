@@ -1,5 +1,5 @@
 // React
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 // MUI theme
 import { createTheme } from '@mui/material/styles'
 import getDesignTokens from './getDesignTokens'
@@ -18,9 +18,13 @@ export default function ToggleColorMode() {
     }),
 
     [],
-    dispatch(clearModeTheme()),
-    dispatch(addModeTheme(mode)),
   )
+
+  useEffect(() => {
+    dispatch(clearModeTheme())
+    dispatch(addModeTheme(mode))
+    // eslint-disable-next-line
+  }, [mode])
 
   // Default dark mode
   // const defaultTheme = useMemo(

@@ -57,10 +57,9 @@ export default function AstroCard(data) {
               </span>{' '}
               !
             </Typography>
-            <Typography>
+            <Typography component="div">
               Votre signe astrologique :{' '}
               <Typography
-                component="div"
                 className="text-radial-gradient-Title"
                 sx={{
                   fontStyle: 'italic',
@@ -72,7 +71,6 @@ export default function AstroCard(data) {
               </Typography>{' '}
               se caractérise par :{' '}
               <Typography
-                component="div"
                 className="text-radial-gradient-Title"
                 sx={{
                   fontStyle: 'italic',

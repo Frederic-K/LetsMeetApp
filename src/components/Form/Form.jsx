@@ -291,7 +291,7 @@ export default function Form({ setIsFormShow }) {
                   sx={{ mt: 3 }}
                   onClick={(e) => handelSubmitClick(e)}
                 >
-                  Send
+                  Envoi
                 </Button>
               </Box>
             </Box>
