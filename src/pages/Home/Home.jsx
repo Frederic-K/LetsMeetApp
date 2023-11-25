@@ -24,6 +24,21 @@ export default function Home() {
   const { modeTheme } = useSelector(modeThemeSelector)
   const [isFormShown, setIsFormShow] = useState(false)
 
+  /// Calc circular carousel size (Pythagore's theorem)
+  /// Check _variables to grab squares sizes :
+  /// // $squareSizeXL: 365px; // $squareSizeXS: 230px;
+  const circularCarouselSquareXL = 365
+  const circularCarouselSquareXS = 230
+
+  const circularCarouselContainerXL = Math.hypot(
+    circularCarouselSquareXL,
+    circularCarouselSquareXL,
+  )
+  const circularCarouselContainerXS = Math.hypot(
+    circularCarouselSquareXS,
+    circularCarouselSquareXS,
+  )
+
   return (
     <Container
       component="main"
@@ -219,8 +234,8 @@ export default function Home() {
           </Box>
           <Box
             sx={{
-              width: '326px',
-              height: '326px',
+              width: `${circularCarouselContainerXS}px`,
+              height: `${circularCarouselContainerXS}px`,
               borderRadius: '50%',
               position: 'absolute',
               top: '50%',
@@ -234,8 +249,8 @@ export default function Home() {
           </Box>
           <Box
             sx={{
-              width: '517px',
-              height: '517px',
+              width: `${circularCarouselContainerXL}px`,
+              height: `${circularCarouselContainerXL}px`,
               borderRadius: '50%',
               position: 'absolute',
               top: '50%',
