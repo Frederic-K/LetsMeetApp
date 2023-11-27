@@ -8,12 +8,13 @@ Application : SPA (Single Page Application)
 
 # Resume
 
+Bring your CV to live !
 It's a small RectJS app that aims to get to know each other :D
 Want to test "Theme" or "Form" : dare to click on my logo !
 
 ![banner](./src/assets/ReadmeImg/MyCVApp.png)
 
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

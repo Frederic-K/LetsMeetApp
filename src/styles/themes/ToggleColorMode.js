@@ -14,11 +14,17 @@ export default function ToggleColorMode() {
     () => ({
       toggleColorMode: () => {
         setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'))
+        localStorage.setItem('mode', mode === 'light' ? 'dark' : 'light')
       },
     }),
-
-    [],
+    [mode],
   )
+
+  useEffect(() => {
+    if (localStorage.getItem('mode')) {
+      setMode(localStorage.getItem('mode'))
+    }
+  }, [])
 
   useEffect(() => {
     dispatch(clearModeTheme())
