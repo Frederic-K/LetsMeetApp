@@ -6,12 +6,12 @@ export default function CircularLoader() {
   return (
     <Container
       sx={{
-        height: '100vh',
+        minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        py: 9,
+        py: 12,
       }}
     >
       <Box sx={{ display: 'flex' }}>
