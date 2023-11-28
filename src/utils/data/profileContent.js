@@ -48,7 +48,7 @@ import solutionAWhitePix from '../../assets/IconSoftSkill/solutionA1.png'
 export const summuryCardPix = [summuryPix]
 
 export const profileSummury = [
-  "Passionné et curieux, j'aime m'investir dans des projets alliant la technique et l'humain.",
+  "Passionné et curieux, j'aime m'investir dans des projets alliant la technique et l'humain, sans oublier une pointe de créativité.",
   'Déployer et administrer des solutions innovantes.',
   "Être à l'écoute, collaborer et accompagner.",
   "Je souhaite aujourd'hui réunir mes compétences et les engager dans un domaine qui m'enthousiasme.",
